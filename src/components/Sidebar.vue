@@ -1,20 +1,25 @@
 <template>
-  <div>
-    Sidebar
-  </div>
+  <input type="text" v-focus />
 </template>
 
 <script>
+const focus = {
+  mounted: (el, bilding) => {
+    console.log(el, bilding);
+  },
+};
 export default {
   name: "SidebarComponent",
-  data(){
-    return{
-
-    }
-  }
-}
+  directives: {
+    focus,
+  },
+  data() {
+    return {
+      items: [
+        { message: "Name", name: "Alijon" },
+        { message: "Email", name: "Valijon" },
+      ],
+    };
+  },
+};
 </script>
-
-<style>
-
-</style>

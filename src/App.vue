@@ -1,15 +1,14 @@
 <template>
-  <Sidebar/>
+  <Sidebar />
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue'
+import Sidebar from "./components/Sidebar.vue";
 
 export default {
   components: { Sidebar },
-  name: 'App',
-
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -19,6 +18,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
 }
 </style>
